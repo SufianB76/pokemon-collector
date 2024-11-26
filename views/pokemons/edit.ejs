@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+    <title>Edit Pokémon</title>
+</head>
+
+<body class="edit-body">
+    <h1 class="edit-h1">Edit <%= pokemon.name %></h1>
+    <form action="/pokemons/<%= pokemon._id %>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" value="<%= pokemon.name %>" name="name" />
+
+        <label for="type">Type:</label>
+        <input type="text" value="<%= pokemon.type %>" name="type" />
+
+        <label for="collected">Check the box if you have this Pokémon:</label>
+        <input type="checkbox" name="collected" <% if (pokemon.collected) { %>checked<% } %> />
+        
+        <button type="submit">Update Pokémon Collection</button>
+    </form>
+    <a class="edit-a" href="/pokemons">Back to the Collection</a>
+</body>
+
+</html>

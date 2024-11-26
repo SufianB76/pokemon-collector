@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+    <title>New Pokemon</title>
+</head>
+
+<body class="new-body">
+    <h1 class="new-h1">Create a new Pokemon</h1>
+    <form action="/pokemons" method="POST">
+        <label>Name:</label>
+        <input name="name" type="text" />
+
+        <label>Type:</label>
+        <input name="type" type="text" />
+
+        <label>Collected:</label>
+        <input name="collected" type="checkbox" />
+        <button type="submit">Add Pokemon</button>
+    </form>
+    <a class="new-a" href="/pokemons/">Back to the collection</a>
+</body>
+
+</html>

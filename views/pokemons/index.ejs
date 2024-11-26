@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+    <title>All Pokemon</title>
+</head>
+
+<body class="poke-index">
+    <h1 class="poke-index-h1">All Pokémons</h1>
+    <ul>
+        <% pokemons.forEach(pokemon => { %>
+            <li class="poke-index-li">
+                <a class="poke-index-a" href="/pokemons/<%= pokemon._id %>">
+                    <%= pokemon.name %> - <%= pokemon.type %>
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/pokemons/new" class="poke-index-a">Add a new Pokémon</a>
+</body>
+
+</html>

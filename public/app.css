@@ -1,0 +1,302 @@
+/* Import a Pokémon-inspired font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #ffcb05, #3b4cca);
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1.index-h1 {
+    font-size: 2.5rem; /* rem stands for root em 1rem is 16px*/
+    text-shadow: 2px 2px #3b4cca; /*2px to the right and below*/
+    margin-top: 20px;
+}
+
+p.index-p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #ffcb05;
+    text-shadow: 1px 1px #2a75bb;
+}
+
+a.index-a {
+    display: inline-block; /*placed inline with other items*/
+    font-size: 1rem;
+    color: #ffcb05;
+    background-color: #3b4cca;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #2a75bb;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a.index-a:hover {
+    transform: translateY(-3px); /*move up by 3px*/
+    box-shadow: 0 7px #2a75bb; /*expnads the shadow*/
+}
+
+a.index-a:active {
+    transform: translateY(1px); /*down by 1px*/
+    box-shadow: 0 2px #2a75bb;
+}
+
+/* ========================================================================= */
+
+/* General Body Styles */
+body.poke-index {
+    background-color: #f0f8ff; 
+    font-family: 'Arial', sans-serif; 
+    color: #2b2b2b;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading Style */
+h1.poke-index-h1 {
+    color: #ffcb05; 
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #3b4cca; /*4px is the blur radius*/
+    margin-bottom: 20px;
+}
+
+/* List Style */
+li.poke-index-li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Link Styles */
+a.poke-index-a {
+    text-decoration: none;
+    color: #3b4cca; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: #ffcb05; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+a.poke-index-a:hover {
+    transform: scale(1.05);
+    background-color: #f5ac78; /* Slightly darker yellow when hovered */
+    color: #2b2b2b; /* Slightly darker text for contrast */
+}
+
+/* Add a new Pokémon link style */
+a[href="/pokemons/new"] {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #3b4cca; /* Reverse colors for emphasis */
+    color: #fff; /* White text for contrast */
+}
+
+a[href="/pokemons/new"]:hover {
+    background-color: #2a3a8c; /* Darker blue on hover */
+}
+
+/* List Container Styling */
+ul {
+    padding: 0;
+}
+
+/* =================================================================================== */
+
+/* General Body Styles */
+body.edit-body {
+    background-color: #f0f8ff; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #2b2b2b;
+}
+
+/* Heading Style */
+h1.edit-h1 {
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #3b4cca; 
+}
+
+/* Form Container */
+form {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*rgba 0.2 is the opacity*/
+    text-align: left;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3b4cca; /* Blue accent */
+}
+
+/* Form Inputs */
+input[type="text"], input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #ffcb05; /* Yellow border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    width: auto;
+    margin-top: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #3b4cca; 
+    color: #fff; 
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2a3a8c; 
+    transform: scale(1.05);
+}
+
+/* Link Styling */
+a.edit-a {
+    display: block;
+    margin-top: 20px;
+    color: #3b4cca; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+a.edit-a:hover {
+    color: #ffcb05; /* Yellow hover */
+}
+
+/* Form Layout */
+form label, form input, form button {
+    width: 100%;
+    max-width: 500px; /* Restrict width for a cleaner layout */
+    margin: auto;
+}
+
+/* ======================================================================== */
+
+body.new-body {
+    background-color: #f7f7f7; 
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Heading Style */
+h1.new-h1 {
+    color: #ffcb05; 
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #3b4cca; 
+}
+
+a.new-a {
+    display: block;
+    margin-top: 20px;
+    color: #3b4cca; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+a.new-a:hover {
+    color: #ffcb05; 
+}
+
+/* ==================================================================== */
+
+/* General Body Styles */
+body.s-body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Heading Style */
+h1.s-h1 {
+    color: #ffcb05; 
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #3b4cca; 
+}
+
+/* Paragraphs */
+.s-p {
+    font-size: 1.2rem;
+    color: #3b4cca;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button.s-button {
+    display: block;
+    background-color: #ffcb05; 
+    color: #3b4cca; 
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button.s-button:hover {
+    background-color: #2a3a8c; 
+    color: #fff; 
+    transform: scale(1.05);
+}
+
+/* Link Styling */
+a.s-a {
+    display: block;
+    margin-top: 20px;
+    color: #3b4cca; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+a.s-a:hover {
+    color: #ffcb05; 
+}
+
+/* Form Layout */
+form.s-form {
+    display: block;
+    margin-top: 20px;
+}
+
